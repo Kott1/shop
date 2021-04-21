@@ -1,0 +1,65 @@
+body {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.menu {
+    background: #222222;
+    padding: 18px 0;
+}
+
+.container--menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.menu-img {
+    padding-right: 30px;
+}
+
+.user {
+    padding-right: 30px;
+}
+
+@media (max-width:768px) {
+
+.menu {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.menu-img {
+    padding-right: 25px;
+}
+
+.user {
+    padding-right:42px;
+}
+}
+
+@media (max-width:376px) {
+
+.menu {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.menu-img {
+    display: none;
+}
+
+.user {
+    display: none;
+}
+
+}
