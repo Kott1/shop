@@ -105,6 +105,14 @@ body {
     position: relative;
 }
 
+.page-header--dark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .header-img {
     margin-right: 39px
 }
@@ -144,6 +152,7 @@ body {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     padding: 16px 16px 0 34px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .cross {
