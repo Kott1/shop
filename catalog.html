@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,7 +12,7 @@
     <nav class="menu">
         <div class="container container--menu">
             <div class="menu__logo-wrp">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="images/logo.png" alt="logo" width="44" height="38">
                 </a>
                 <img src="images/search.svg" alt="search">
@@ -21,11 +21,11 @@
                 <a href="#" class="menu_bars">
                     <img src="images/menu.svg" alt="menu">
                 </a>
-                <a href="catalog.html" class="user">
+                <a href="" class="user">
                     <img src="images/user.svg" alt="user">
                 </a>
                 <div class="cart-wrp">
-                    <a href="catalog.html" class="cart">
+                    <a href="" class="cart">
                         <img class="cart" src="images/cart.svg" alt="cart">
                         <span class="cart_nmbr">5</span>
                     </a>
@@ -33,82 +33,117 @@
             </div>
         </div>
     </nav>
-    <header class="page-header">
-        <img class="header-img" src="images/header-img.png" alt="photo" width="800" height="764">
-        <h1 class="header_heading"><span class="header_heading--big">the brand</span><span
-                class="header_heading--bol_">of luxerious <span class="header_heading--pink">fashion</span></span>
-        </h1>
-        <div class="headerDark hidden">
-            <div class="header_menu">
-                <div class="cross">
-                    <img src="images/cross.svg" alt="cross">
-                </div>
-                <h3 class="menu_heading">MENU</h3>
-                <span class="menu_list-name">MAN</span>
-                <ul class="menu_list">
-                    <li class="menu_item">Accessories</li>
-                    <li class="menu_item">Bags</li>
-                    <li class="menu_item">Denim</li>
-                    <li class="menu_item">T-Shirts</li>
-                </ul>
-                <span class="menu_list-name">WOMAN</span>
-                <ul class="menu_list">
-                    <li class="menu_item">Accessories</li>
-                    <li class="menu_item">Bags</li>
-                    <li class="menu_item">Denim</li>
-                    <li class="menu_item">T-Shirts</li>
-                    <li class="menu_item">Shirts</li>
-                </ul>
-                <span class="menu_list-name">KIDS</span>
-                <ul class="menu_list">
-                    <li class="menu_item">Accessories</li>
-                    <li class="menu_item">Bags</li>
-                    <li class="menu_item">Denim</li>
-                    <li class="menu_item">T-Shirts</li>
-                    <li class="menu_item">Shirts</li>
-                    <li class="menu_item">Polos</li>
-                </ul>
+
+    <header class="newArrivals">
+        <div class="container container--flex">
+            <h1 class="header__left">NEW ARRIVALS</h1>
+            <div class="header__right">
+                <a href="#" class="header__link">HOME</a>
+                <span>/</span>
+                <a href="#" class="header__link">MEN</a>
+                <span>/</span>
+                <a href="#" class="header__link header__link--pink">NEW ARRIVALS</a>
             </div>
         </div>
     </header>
 
     <main>
-        <aside class="grid container">
-            <div class="grid_wrp">
-                <img class="grid_women" src="images/for-women.png" alt="women">
-                <div class="grid_women-wrp">
-                    <p class="grid_txt">30% OFF</p>
-                    <p class="grid_txt--pink">FOR WOMEN</p>
+        <section class="container">
+            <div class="filters">
+                <div class="filters__left">
+                    <button class="filters__button">
+                        <span class="filters__txt">FILTER</span>
+                        <svg class="filters__img" width="15" height="10" viewBox="0 0 15 10"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                        </svg>
+                    </button>
+                    <div class="left-popup hidden">
+                        <nav class="left-popup-wrp">
+                            <div class="left-popup__heading">CATEGORY
+                            </div>
+                            <div class="hidden">
+                                <a href="" class="left-popup__link">Accessories</a>
+                                <a href="" class="left-popup__link">Bags</a>
+                                <a href="" class="left-popup__link">Denim</a>
+                                <a href="" class="left-popup__link">Hoodies & Sweatshirts</a>
+                                <a href="" class="left-popup__link">Jackets & Coats</a>
+                                <a href="" class="left-popup__link">Polos</a>
+                                <a href="" class="left-popup__link">Shirts</a>
+                                <a href="" class="left-popup__link">Shoes</a>
+                                <a href="" class="left-popup__link">Sweaters & Knits</a>
+                                <a href="" class="left-popup__link">T-Shirts</a>
+                                <a href="" class="left-popup__link">Tanks</a>
+                            </div>
+                        </nav>
+                        <nav class="left-popup-wrp">
+                            <div class="left-popup__heading">BRAND</div>
+                            <div class="hidden">
+                                <a href="" class="left-popup__link">Accessories</a>
+                                <a href="" class="left-popup__link">Bags</a>
+                                <a href="" class="left-popup__link">Denim</a>
+                                <a href="" class="left-popup__link">Hoodies & Sweatshirts</a>
+                                <a href="" class="left-popup__link">Jackets & Coats</a>
+                                <a href="" class="left-popup__link">Polos</a>
+                                <a href="" class="left-popup__link">Shirts</a>
+                                <a href="" class="left-popup__link">Shoes</a>
+                                <a href="" class="left-popup__link">Sweaters & Knits</a>
+                                <a href="" class="left-popup__link">T-Shirts</a>
+                                <a href="" class="left-popup__link">Tanks</a>
+                            </div>
+                        </nav>
+                        <nav class="left-popup-wrp">
+                            <div class="left-popup__heading">DESIGNER</div>
+                            <div class="hidden">
+                                <a href="" class="left-popup__link">Accessories</a>
+                                <a href="" class="left-popup__link">Bags</a>
+                                <a href="" class="left-popup__link">Denim</a>
+                                <a href="" class="left-popup__link">Hoodies & Sweatshirts</a>
+                                <a href="" class="left-popup__link">Jackets & Coats</a>
+                                <a href="" class="left-popup__link">Polos</a>
+                                <a href="" class="left-popup__link">Shirts</a>
+                                <a href="" class="left-popup__link">Shoes</a>
+                                <a href="" class="left-popup__link">Sweaters & Knits</a>
+                                <a href="" class="left-popup__link">T-Shirts</a>
+                                <a href="" class="left-popup__link">Tanks</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="filters__center">
+                    <div class="trending-wrp">
+                        <div class="center-button">TRENDING NOW
+                            <img class="arrow" src="images/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="size-wrp">
+                        <div class="center-button size_button">SIZE
+                            <img class="arrow" src="images/arrow.svg" alt="arrow">
+                        </div>
+                        <div class="size__list hidden">
+                            <div class="size__item">
+                                <input type="checkbox">XS
+                            </div>
+                            <div class="size__item">
+                                <input type="checkbox">S
+                            </div>
+                            <div class="size__item">
+                                <input type="checkbox">M
+                            </div>
+                            <div class="size__item">
+                                <input type="checkbox">L
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-wrp">
+                        <div class="center-button">PRICE
+                            <img class="arrow" src="images/arrow.svg" alt="arrow">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="grid_wrp">
-                <img class="grid_men" src="images/for-men.png" alt="men">
-                <div class="grid_men-wrp">
-                    <p class="grid_txt">HOT DEAL</p>
-                    <p class="grid_txt--pink">FOR MEN</p>
-                </div>
-            </div>
-            </div>
-            <div class="grid_wrp">
-                <img class="grid_kids" src="images/for-kids.png" alt="kids">
-                <div class="grid_kids-wrp">
-                    <p class="grid_txt">NEW ARRIVALS</p>
-                    <p class="grid_txt--pink">FOR KIDS</p>
-                </div>
-            </div>
-            <div class="grid_wrp grid_wrp--column">
-                <img class="grid_accesories" src="images/accesories.png" alt="accesories" width="1140" height="180">
-                <div class="grid_accesories--position">
-                    <p class="grid_txt">LUXIROUS & TRENDY</p>
-                    <p class="grid_txt--pink">ACCESORIES</p>
-                </div>
-            </div>
-        </aside>
-
-        <section class="featured-items container">
-            <h1 class="featured_heading">fetured items</h1>
-            <p class="featured_txt">Shop for items based on what we featured in this week</p>
-            <div class="featured_grid">
+            <div class="catalog_grid">
                 <div class="card">
                     <img class="card_img" src="images/featured-img.png" alt="photo" width="360" height="420">
                     <button class="card_btn"><img class="card_cart-img" src="images/card-cart.svg" alt="cart">Add to
@@ -123,7 +158,20 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card_img" src="images/featured-img2.png" alt="photo" width="360" height="420">
+                    <img class="card_img" src="images/catalog-img1.png" alt="photo" width="360" height="420">
+                    <button class="card_btn"><img class="card_cart-img" src="images/card-cart.svg" alt="cart">Add to
+                        Cart</button>
+                    <div class="card_txt-wrp">
+                        <h3 class="card_heading">ellery x m'o capsule</h3>
+                        <p class="featured_txt card_txt">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="card_price">$52.00</span>
+                    </div>
+                </div>
+                <div class="card card-hidden">
+                    <img class="card_img" src="images/catalog-img2.png" alt="photo" width="360" height="420">
                     <button class="card_btn"><img class="card_cart-img" src="images/card-cart.svg" alt="cart">Add to
                         Cart</button>
                     <div class="card_txt-wrp">
@@ -162,7 +210,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card_img" src="images/featured-img5.png" alt="photo" width="360" height="420">
+                    <img class="card_img" src="images/catalog-img3.png" alt="photo" width="360" height="420">
                     <button class="card_btn"><img class="card_cart-img" src="images/card-cart.svg" alt="cart">Add to
                         Cart</button>
                     <div class="card_txt-wrp">
@@ -175,7 +223,33 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card_img" src="images/featured-img6.png" alt="photo" width="360" height="420">
+                    <img class="card_img" src="images/catalog-img4.png" alt="photo" width="360" height="420">
+                    <button class="card_btn"><img class="card_cart-img" src="images/card-cart.svg" alt="cart">Add to
+                        Cart</button>
+                    <div class="card_txt-wrp">
+                        <h3 class="card_heading">ellery x m'o capsule</h3>
+                        <p class="featured_txt card_txt">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="card_price">$52.00</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_img" src="images/catalog-img5.png" alt="photo" width="360" height="420">
+                    <button class="card_btn"><img class="card_cart-img" src="images/card-cart.svg" alt="cart">Add to
+                        Cart</button>
+                    <div class="card_txt-wrp">
+                        <h3 class="card_heading">ellery x m'o capsule</h3>
+                        <p class="featured_txt card_txt">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="card_price">$52.00</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_img" src="images/catalog-img6.png" alt="photo" width="360" height="420">
                     <button class="card_btn"><img class="card_cart-img" src="images/card-cart.svg" alt="cart">Add to
                         Cart</button>
                     <div class="card_txt-wrp">
@@ -188,7 +262,16 @@
                     </div>
                 </div>
             </div>
-            <button class="featured_btn card_price">browse all product</button>
+            <div class="catalog__pagination">
+                <a href="#" class="pagination__link"><img src="images/pagin-arrow.svg" alt=""></a>
+                <a href="#" class="pagination__link">1</a>
+                <a href="#" class="pagination__link">2</a>
+                <a href="#" class="pagination__link">3</a>
+                <a href="#" class="pagination__link">4</a>
+                <a href="#" class="pagination__link">5</a>
+                <a href="#" class="pagination__link">6.....20</a>
+                <a href="#" class="pagination__link"><img class="arrow--rotate" src="images/pagin-arrow.svg" alt=""></a>
+            </div>
         </section>
         <section class="info">
             <div class="delivery">
@@ -264,7 +347,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="catalog.js"></script>
 </body>
 
 </html>
