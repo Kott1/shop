@@ -291,6 +291,7 @@ body {
 
 .card {
     position: relative;
+    max-width: 360px;
 }
 
 .card_img {
@@ -347,13 +348,19 @@ body {
     line-height: 19px;
     color: #F16D7F;
     font-family: lato-regular, arial, sans-serif;
+
 }
 
 .featured_btn {
     padding: 14px 38px;
     background-color: transparent;
     border: 1px solid #F26376;
-    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    font-family: lato-regular, arial, sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 .featured_btn:hover {
@@ -364,6 +371,10 @@ body {
 .featured_btn:active {
     background: transparent;
     color: #F16D7F;
+}
+
+.featured_btn:hover .collection__btn {
+    fill: #fff;
 }
 
 .info {
@@ -722,7 +733,7 @@ body {
     margin-bottom: 96px; 
 }
 
-.arrow--rotate {
+.reverse {
     transform: rotate(180deg);
 }
 
@@ -745,6 +756,128 @@ body {
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     padding-top: 64px;
     padding-bottom: 48px;
+}
+
+/* ---------------------Cart----------------------------- */
+
+.cart__pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F7F7F7;
+    padding-top: 11px;
+    padding-bottom: 42px;
+}
+
+.cart-arrow {
+    background: rgba(42, 42, 42, 0.15);
+    padding: 12px 17px;
+}
+
+.cart-arrow:hover .cart-arrow--pink{
+    fill: #F16D7F;
+}
+
+.wmn-collection {
+    position: relative;
+    z-index: 1;
+    top: 937px;
+    background-color: #fff;
+    width: 1024px;
+    left: 230px;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    top: -65px;
+    left: 0;
+}
+
+.collection-wrp {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 65px 0;
+    align-items: center;
+}
+
+.collection_txt-wrp {
+    padding-bottom: 65px;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 65px;
+}
+
+.collection__heading,
+.collection__heading-pink,
+.collection__price,
+.collection__txt {
+    font-family: lato-light, arial, sans-serif;
+}
+
+.collection__heading-pink {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-bottom: 12px;
+}
+
+.collection__heading-pink::after {
+    content: "";
+    background-color: #EF5B70;
+    height: 3px;
+    width: 63px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+.collection__heading {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+}
+
+.collection__txt {
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E5E5E;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    max-width: 555px;
+}
+
+.collection__price {
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+}
+
+.collection_filter-wrp {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.collection__btn {
+    margin-right: 23px;
+    fill: #EF5B70;
+}
+
+.btn--margin {
+    margin-right: 23px;
+}
+
+.cart-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.cart-grid {
+    display: grid;
+    grid-template: 1fr / repeat(3, 360px);
+    grid-gap: 30px;
+    padding: 129px 0;
 }
 
 @media (max-width:768px) {
@@ -826,7 +959,7 @@ body {
 }
 
 .card {
-    width: 360px;
+    max-width: 360px;
 }
 
 .info {
@@ -889,9 +1022,36 @@ body {
     display: none;
 }
 
+.cart__pagination {
+    padding-top: 30px;
+    padding-bottom: 29px;
+}
+
+.wmn-collection {
+    position: static;
+    max-width: 768px;
+}
+
+.cart__pagination {
+    position: static;
+}
+
+.cart-cards {
+    display: block;
+}
+
+.cart-grid {
+    grid-gap: 16px;
+    padding-left: 16px;
+}
+
 }
 
 @media (max-width:376px) {
+
+.container {
+    max-width: 376px;
+}
 
 .menu {
     padding-right: 16px;
@@ -1086,10 +1246,38 @@ body {
 
 .catalog_grid {
     grid-template: repeat(6, 1fr) / 1fr;
-    padding: 32px 8px 40px;
+    padding: 32px 7px 40px;
 }
 
 .catalog__pagination {
     margin-bottom: 64px;
 }
+
+.cart__pagination {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+.collection__txt {
+    max-width: 326px;
+}
+
+.pagin__img {
+    position: relative;
+    min-width: 374px;
+}
+
+.cart-arrow {
+    position: absolute;
+    z-index: 1;
+}
+
+.cart-arrow--pos {
+    right: 0;
+}
+
+.cart-grid {
+    grid-template: repeat(2, 1fr) / 360px;
+    padding-left: 8px;
+}
+
 }
