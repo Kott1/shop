@@ -1054,6 +1054,122 @@ body {
     cursor: pointer;
 }
 
+/* ---------------------Registration----------------------------- */
+
+.reg {
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    font-family: lato-light, arial, sans-serif;
+}
+
+.regLeft {
+    width: 360px;
+    margin-right: 128px;
+}
+
+.regLeft__tittle {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.regLeft__input {
+    width: 340px;
+    padding: 12px 0 15px 16px;
+}
+
+.regLeft__input_margin {
+    margin-bottom: 20px;
+}
+
+.regLeft__inputWrp {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    line-height: 13px;
+    margin-top: 31px;
+    margin-bottom: 33px;
+}
+
+.regLeft__inputCheckbox {
+    border-radius: 50px;
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.regLeft__inputCheckbox_margin {
+    margin-left: 20px;
+}
+
+.regLeft__login {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.regLeft__txt {
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-top: 15px;
+    margin-bottom: 39px;
+}
+
+.regLeft__btn {
+    padding: 16px 29px;
+    background: #F16D7F;
+    color: white;
+    fill: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.regLeft__arrow {
+    margin-left: 20px;
+}
+
+.regRight {
+    width: 609px;
+}
+
+.regRight__tittle {
+    margin: 0;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+}
+
+.regRight__txt {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 22px;
+    margin-bottom: 21px;
+}
+
+.regRight__list {
+    margin: 0;
+    font-size: 24px;
+    line-height: 29px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.regRight__item {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.regRight__item::before {
+    content: url(../images/regTick.svg);
+    margin-right: 23px; 
+}
+
+.regRight__item:last-child {
+    margin: 0;
+}
+
 @media (max-width:768px) {
 
 .menu {
@@ -1243,6 +1359,27 @@ body {
 
 .right__input-wrp {
     margin-right: 15px;
+}
+
+.reg {
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.regLeft {
+    margin-right: 22px;
+}
+
+.regRight {
+    width: 354px;
+}
+
+.regRight__txt,
+.regRight__tittle,
+.regRight__item {
+    font-size: 16px;
+    line-height: 19px;
 }
 }
 
@@ -1539,5 +1676,15 @@ body {
 .cart__right {
     flex-direction: column;
     width: 360px;
+}
+
+.reg {
+    flex-direction: column;
+    align-items: center;
+}
+
+.regLeft {
+    margin: 0;
+    margin-bottom: 20px;
 }
 }
