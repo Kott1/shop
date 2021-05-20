@@ -299,6 +299,7 @@ body {
 
 .card_img {
     display: block;
+    transition: all 1s;
 }
 
 .card_btn {
@@ -365,28 +366,13 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    transition: all 1s ease-in-out;
 }
-
-@keyframes shadow-pop-tr {
-    0% {
-      box-shadow: 0 0 #F16D7F;
-      transform: translateX(0) translateY(0);
-    }
-    100% {
-      box-shadow: -1px -1px #F16D7F, -8px -8px #F16D7F;
-      transform: translateX(8px) translateY(8px);
-    }
-  }
 
 .featured_btn:hover {
     background: #F16D7F;
     color: #fff;
-    animation: shadow-pop-tr 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
-
-.featured_btn:active {
-    background: transparent;
-    color: #F16D7F;
+    transform: scale(1.1);
 }
 
 .featured_btn:hover .collection__btn {
@@ -543,6 +529,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+    transition: all 1s;
 }
 
 .copy_link:hover {
@@ -1063,9 +1050,16 @@ body {
     padding: 16px 45px;
     background: #F16D7F;
     outline: none;
-    border: none;
+    border: 1px solid #F16D7F;
     font-family: lato-light, arial, sans-serif;
     cursor: pointer;
+    transition: all 1s;
+}
+
+.checkout:hover {
+    color: #F16D7F;
+    background: white;
+    transform: scale(1.1);
 }
 
 /* ---------------------Registration----------------------------- */
@@ -1137,7 +1131,15 @@ body {
     fill: white;
     cursor: pointer;
     outline: none;
-    border: none;
+    border: 1px solid #F16D7F;
+    transition: all 1s;
+}
+
+.regLeft__btn:hover {
+    background: white;
+    color: #F16D7F;
+    fill: #F16D7F;
+    transform: scale(1.1);
 }
 
 .regLeft__arrow {
@@ -1397,7 +1399,7 @@ body {
 @media (max-width:376px) {
 
 .container {
-    max-width: 375px;
+    max-width: 100%;
 }
 
 .menu {
@@ -1617,7 +1619,7 @@ body {
 
 .pagin__img {
     position: relative;
-    min-width: 374px;
+    max-width: 100%;
 }
 
 .cart-arrow {
